@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+        <title>Unit Convertion</title>
+    </head>
+    <body>
+        <main class="container">
+            <header>
+                <h1>Metric / Imperial Unit Conversion</h1>
+                
+                <div class="checkbox-section">
+                    <div class="checkbox-block">
+                        <label for="calc-length">Length<br><span class="note">(Meter / Feet)</span>
+                            <input type="checkbox" name="unit" value="length" id="calc-length">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                    </div>
+
+                    <div class="checkbox-block">
+                        <label for="calc-volume">Volume<br><span class="note">(Liters / Gallons)</span>
+                            <input type="checkbox" name="unit" value="volume" id="calc-volume">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-block">
+                        <label for="calc-mass">Mass<br><span class="note">(Kilo / Pounds)</span>
+                            <input type="checkbox" name="unit" value="mass" id="calc-mass">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <input type="text" id="input-value" size="1">
+
+                <button id="convert-btn">Convert</button>
+                
+            </header>
+
+            <section id="output-section">
+                
+            </section>
+        </main>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
